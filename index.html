@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body>
+		<div id="navigateButtons">
+      <button onclick="tab('mineGoldMenu')">Go to Mine Gold</button>
+      <button onclick="tab('shopMenu')">Go to Shop</button>
+    </div>
+		<br>
+		Gold: <span id="gold">0</span><br>
+		GPC: <span id="gpc">1</span><br>
+		GPS: <span id="gps">0</span><br>
+		<div id="mineGoldMenu">
+      <button onclick="goldClick()">Get Gold</button>
+    </div>
+
+		<div id="shopMenu">
+			<button onclick="buyPickaxe()">Buy Pickaxe</button>
+			Pickaxe Level: <span id="pickaxe">0</span>
+			// Pickaxe Cost: <span id="pickaxecost">50</span>
+			<br>
+			<button onclick="buyMiner()">Buy Miner</button>
+			Miners: <span id="miner">0</span>
+			// Miner Cost: <span id="minercost">10</span>
+			<br>
+			<button onclick="buyCoalMine()">Buy Coal Mine</button>
+			Coal Mines: <span id="coalmine">0</span>
+			// Coal Mine Cost: <span id="coalminecost">150</span>
+		</div>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
