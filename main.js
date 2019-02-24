@@ -1,11 +1,12 @@
 // Variables
-var gold = 150;
+var gold = 0;
 var gps = 0;
 var gpc = 1;
 var pickaxe = 0;
 var miner = 0;
 var coalmine = 0;
 var silvermine = 0;
+
 
 // Rounding Function
 function round(input){
@@ -76,7 +77,7 @@ function buyCoalMine(){
 };
 
 function buySilverMine(){
-    var silverminecost = Math.floor(500 * Math.pow(1.25,silvermine));
+    var silverminecost = Math.floor(1000 * Math.pow(1.25,silvermine));
     if(gold >= silverminecost){
         gps = gps + 10;
         silvermine = silvermine + 1;
@@ -84,7 +85,7 @@ function buySilverMine(){
         document.getElementById('silvermine').innerHTML = silvermine;
         document.getElementById("gold").innerHTML = round(gold);
     };
-    var nextSilverMineCost = Math.floor(500 * Math.pow(1.25,silvermine));
+    var nextSilverMineCost = Math.floor(1000 * Math.pow(1.25,silvermine));
     document.getElementById('silverminecost').innerHTML = nextSilverMineCost;
 };
 
