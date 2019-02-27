@@ -1,11 +1,16 @@
 .goldmine{
-  width: 220px;
+  width: 33%;
   padding: 10px;
   float: left;
 }
 
 .shopItems{
   padding: 10px;
-  margin-left: 230px;
+  margin-left: 33%;
   border-left: 1px solid #000066;
+}
+
+div button{
+  height: 25px;
+  width: 120px;
 }
