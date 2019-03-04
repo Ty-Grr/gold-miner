@@ -6,7 +6,7 @@ var pickaxe = 0;
 var miner = 0;
 var coalmine = 0;
 var silvermine = 0;
-
+var updateGUIInterval = setInterval("updateGUI()", 10);
 
 // Rounding Function
 function round(input){
@@ -27,13 +27,22 @@ function gpsClick(){
   document.getElementById("gpc").innerHTML = gpc;
 }
 
-// Menu function
-function tab(tab) {
-  document.getElementById("mineGoldMenu").style.display = "none"
-  document.getElementById("shopMenu").style.display = "none"
-  document.getElementById(tab).style.display = "inline-block"
+// Updates to show new Items
+function updateGUI(){
+  if(gold >= 10){
+    document.getElementById("minerID").style.visibility = "visible"
+  }
+  if(gold >= 150){
+    document.getElementById("coalmineID").style.visibility = "visible"
+  }
+  if(gold >= 200){
+    document.getElementById("pickaxeID").style.visibility = "visible"
+  }
+  if(gold >= 1000){
+    document.getElementById("silvermineID").style.visibility = "visible"
+  }
 }
-tab("mineGoldMenu")
+
 
 
 // Shop item functions
