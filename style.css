@@ -5,6 +5,9 @@
   float: left;
 }
 
+body{
+  font-size: 20px;
+}
 
 div button{
   background-color: black;
@@ -17,5 +20,4 @@ div button{
   margin: 2px;
   cursor: pointer;
   border-radius: 25px;
-
 }

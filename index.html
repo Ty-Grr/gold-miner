@@ -7,11 +7,16 @@
 		<div id="goldmine">
 			Gold: <span id="gold">0</span><br>
 			GPC: <span id="gpc">1</span><br>
-			GPS: <span id="gps">0</span><br>
+			Gold Per Tick : <span id="gpt">0</span><br>
+			Tick Rate : <span id="tickrate">1000</span><br>
 			<button onmousedown="goldClick()">Get Gold</button><br><br>
-		</div><br>
+		</div>
 
-		<div id="pickaxeID" style="visibility: hidden;">
+		<div id="tickrateID" style="visibility: hidden; float: right;">
+			<button id="upgradeTickRate()"
+		</div>
+
+		<div id="pickaxeID" style="visibility: hidden; float: right;">
 			<button onclick="buyPickaxe()">Buy Pickaxe</button>
 			Pickaxe Level: <span id="pickaxe">0</span>
 			// Pickaxe Cost: <span id="pickaxecost">200</span>
