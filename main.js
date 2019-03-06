@@ -1,5 +1,5 @@
 // Variables
-var gold = 300000;
+var gold = 0;
 var gps = 0;
 var gpc = 1;
 var multiplier = 1.07
